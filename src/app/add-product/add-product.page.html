@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="text-white">+ Add Product </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <form [formGroup]="productForm" (ngSubmit)="onSubmit()" class="container ion-content-spacing">
+      <ion-item class="ion-item-spacing" fill="outline">
+        <ion-label position="floating" class="text-dark fs-5">Product Name</ion-label>
+        <ion-input type="text" formControlName="productName" class="text-dark" [(ngModel)]="productsobj.productName"></ion-input>
+        
+      </ion-item>
+      <ion-item class="ion-item-spacing" fill="outline">
+        <ion-label position="floating" class="text-dark  fs-5">Price</ion-label>
+        <ion-input formControlName="price" type="number" class="text-dark " [(ngModel)]="productsobj.price"></ion-input>
+      </ion-item>
+      <ion-item class="ion-item-spacing" fill="outline">
+        <ion-label position="floating" class="text-dark  fs-5">Old Price</ion-label>
+        <ion-input formControlName="oldPrice" type="number" class="text-dark" [(ngModel)]="productsobj.oldPrice"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Category</ion-label>
+        <ion-select formControlName="category" class="text-dark"
+        [(ngModel)]="productsobj.category" [interfaceOptions]="customAlertOptions" interface="alert" placeholder="Select One">
+          <ion-select-option value="Desk Supplies">Desk Supplies</ion-select-option>
+          <ion-select-option value="Paper Products">Paper Products</ion-select-option>
+          <ion-select-option value="Filling">Filling</ion-select-option>
+          <ion-select-option value="Mailing/Stationery">Mailing/Stationery</ion-select-option>
+          <ion-select-option value="Printer">Printer</ion-select-option>
+          <ion-select-option value="Identification">Identification</ion-select-option>
+        </ion-select>
+      </ion-item>
+        <ion-item>
+          <ion-label>Regular textarea:</ion-label>
+          <ion-textarea formControlName="description" type="text" class="text-dark" [(ngModel)]="productsobj.description" placeholder="Type something here"></ion-textarea>
+        </ion-item>
+      <ion-grid>
+        <ion-row class="ion-text-center">
+          <ion-col>
+            <ion-button type="submit" [disabled]="!productForm.valid">Submit</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </form>
+  </div>
+</ion-content>

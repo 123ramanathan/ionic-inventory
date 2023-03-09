@@ -1,0 +1,102 @@
+{
+  "posts": [
+    {
+      "productName": "Pens",
+      "price": 12,
+      "oldPrice": "20",
+      "category": "Desk Supplies",
+      "description": "this is a good Material",
+      "id": 1
+    },
+    {
+      "productName": "Pencils",
+      "price": 7,
+      "oldPrice": 5,
+      "category": "Filling",
+      "description": "this is a good Pencil",
+      "id": 4
+    },
+    {
+      "productName": "Spiral Notebook",
+      "price": "22",
+      "oldPrice": 21,
+      "category": "Paper Products",
+      "description": "this is a good Material",
+      "id": 5
+    },
+    {
+      "productName": "Letter Envelops",
+      "category": "Mailing/Stationery",
+      "price": "9",
+      "oldPrice": 27,
+      "description": "this is a good Material",
+      "id": 8
+    },
+    {
+      "productName": "Bubble wrap",
+      "category": "Mailing/Stationery",
+      "price": "23",
+      "oldPrice": 23,
+      "description": "this is a good Material",
+      "id": 9
+    },
+    {
+      "productName": "Ink/toner catridges",
+      "price": "22",
+      "oldPrice": 23,
+      "category": "Printer",
+      "description": "this is a good Material",
+      "id": 10
+    },
+    {
+      "productName": "Price tags",
+      "category": "Identification",
+      "price": "45",
+      "oldPrice": 22,
+      "description": "this is a good Material",
+      "id": 11
+    },
+    {
+      "productName": "Exam Pad",
+      "category": "Paper Products",
+      "price": "22",
+      "oldPrice": 22,
+      "description": "this is a good Material",
+      "id": 12
+    },
+    {
+      "productName": "Glitter sheet",
+      "category": "Printer",
+      "price": 33,
+      "oldPrice": 22,
+      "description": "this is a good Material",
+      "id": 14
+    },
+    {
+      "productName": "scrap Book",
+      "price": 45,
+      "oldPrice": 23,
+      "category": "Paper Products",
+      "description": "this a very good material",
+      "id": 15
+    },
+    {
+      "productName": "Accounts Note",
+      "price": 90,
+      "oldPrice": 75,
+      "category": "Paper Products",
+      "description": "this is good material\n",
+      "id": 16
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

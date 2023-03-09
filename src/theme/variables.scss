@@ -52,7 +52,7 @@
   --ion-color-danger-tint: #ed576b;
 
   /** dark **/
-  --ion-color-dark: #222428;
+  --ion-color-dark: #2354b5;
   --ion-color-dark-rgb: 34, 36, 40;
   --ion-color-dark-contrast: #ffffff;
   --ion-color-dark-contrast-rgb: 255, 255, 255;
@@ -197,10 +197,10 @@
    */
 
   .md body {
-    --ion-background-color: #121212;
+    --ion-background-color: #ffffff;
     --ion-background-color-rgb: 18,18,18;
 
-    --ion-text-color: #ffffff;
+    --ion-text-color: black;
     --ion-text-color-rgb: 255,255,255;
 
     --ion-border-color: #222222;
@@ -225,12 +225,30 @@
     --ion-color-step-900: #e7e7e7;
     --ion-color-step-950: #f3f3f3;
 
-    --ion-item-background: #1e1e1e;
+    --ion-item-background:rgb(255, 255, 255);
 
-    --ion-toolbar-background: #1f1f1f;
+    --ion-toolbar-background: #1047df;
 
     --ion-tab-bar-background: #1f1f1f;
 
     --ion-card-background: #1e1e1e;
+
+    
   }
+}
+.alert-radio-label.sc-ion-alert-md {
+  padding-left: unset;
+  padding-right: unset;
+  -webkit-padding-start: 52px;
+  padding-inline-start: 52px;
+  -webkit-padding-end: 26px;
+  padding-inline-end: 26px;
+  color: black !important;
+}
+.toolbar-container {
+  padding-left: unset;
+  padding-right: unset;
+  padding-inline-start: var(--padding-start);
+  padding-inline-end: var(--padding-end);
+  border-radius: 10px !important; 
 }
