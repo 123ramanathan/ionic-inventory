@@ -13,7 +13,7 @@ import { AddProductPage } from '../add-product/add-product.page';
 })
 export class HomePage implements OnInit {
 
-  displayedColumns: string[] = ['id', 'productName', 'price', 'oldPrice', 'category','description', 'action'];
+  displayedColumns: string[] = ['checkbox','id','productName', 'price', 'oldPrice', 'category','description', 'action'];
 
   length: number = 0;
   pageSize = 5;
@@ -24,7 +24,7 @@ export class HomePage implements OnInit {
   productlist:any
   constructor(private service:ProductService,private modalctrl:ModalController) {}
   ngOnInit(): void {
-    this.getAllemployeeList()
+    this.getProductList()
 
   }
   async openModal() {
@@ -44,7 +44,7 @@ export class HomePage implements OnInit {
     }
   }
 
-  getAllemployeeList() {
+  getProductList() {
     this.service.getProductList().subscribe(res => {
       console.log(res);
       this.productlist = res;
@@ -53,9 +53,9 @@ export class HomePage implements OnInit {
       this.dataSource.sort = this.sort;
     })
   }
-  deleteEmployee(id: any) {
+  deleteProduct(id: any) {
     this.service.deleteProduct(id).subscribe((res) => {
-    this.getAllemployeeList()
+    this.getProductList()
     })
   }
 

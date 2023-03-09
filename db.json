@@ -18,19 +18,11 @@
     },
     {
       "productName": "Spiral Notebook",
-      "price": "22",
-      "oldPrice": 21,
+      "price": 50,
+      "oldPrice": 16,
       "category": "Paper Products",
       "description": "this is a good Material",
       "id": 5
-    },
-    {
-      "productName": "Letter Envelops",
-      "category": "Mailing/Stationery",
-      "price": "9",
-      "oldPrice": 27,
-      "description": "this is a good Material",
-      "id": 8
     },
     {
       "productName": "Bubble wrap",
@@ -87,6 +79,14 @@
       "category": "Paper Products",
       "description": "this is good material\n",
       "id": 16
+    },
+    {
+      "productName": "Drawing Chart",
+      "price": 10,
+      "oldPrice": 5,
+      "category": "Paper Products",
+      "description": "this is very thick material",
+      "id": 17
     }
   ],
   "comments": [

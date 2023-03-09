@@ -24,6 +24,14 @@
     <div class="mat-elevation-z8 table table-responsive-sm">
 
       <table mat-table [dataSource]="dataSource" matSort>
+        
+        <ng-container matColumnDef="checkbox">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Status </th>
+          <td mat-cell *matCellDef="let row"> <ion-radio-group >
+            <ion-radio value="custom"></ion-radio>
+            
+          </ion-radio-group> </td>
+        </ng-container>
         <ng-container matColumnDef="id">
           <th mat-header-cell *matHeaderCellDef mat-sort-header>ID </th>
           <td mat-cell *matCellDef="let row"> {{row.id}} </td>
@@ -60,7 +68,7 @@
             <div>
               <a routerLink='/add-product/{{row.id}}' type="button"><i class='bx bxs-pencil text-success fs-4 edit'></i></a>
               <a class="delete">
-                <i class='bx bxs-trash text-danger fs-4 delete mx-2' (click)="deleteEmployee(row.id)"></i>
+                <i class='bx bxs-trash text-danger fs-4 delete mx-2' (click)="deleteProduct(row.id)"></i>
               </a>
             </div>
           </td>
